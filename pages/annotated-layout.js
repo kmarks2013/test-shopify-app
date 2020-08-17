@@ -5,17 +5,23 @@ import {
     FormLayout,
     Layout,
     Page,
+    SettingToggle,
     Stack,
     TextField,
+    TextStyle
 } from "@shopify/polaris"
 
 class AnnotatedLayout extends React.Component {
     state = {
-        discount:'10%'
+        discount:'10%',
+        enabled: false
     }
 
     render() {
-        const { discount } = this.state
+        const { discount, enabled } = this.state
+        const contentStatus = enabled ? "Disable" : "Enable"
+        const textStatus = enabled ? 'enabled': 'disabled'
+
         return (
             <Page>
                 <Layout>
