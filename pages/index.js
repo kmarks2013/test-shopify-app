@@ -11,6 +11,7 @@ const  Index = () => (
                 content: 'Select products',
                 onAction: () => console.log('clicked')
             }}
+            image={img}
         >
             <p> Select products to chagne their price temporarily</p>
         </EmptyState>
