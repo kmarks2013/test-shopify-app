@@ -20,3 +20,5 @@ class MyApp extends App {
         )
     }
 }
+
+export default MyApp
