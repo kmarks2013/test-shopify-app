@@ -39,4 +39,9 @@ app.prepare().then(() => {
         ctx.res.statusCode = 200
         return
     })
+
+    server.listen(port, () => {
+        console.log(`> Ready on http://localhost:${port}`)
+    })
+
 })
